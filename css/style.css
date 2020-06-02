@@ -60,13 +60,13 @@ span.light-theme{
 footer.light-theme{
     background-color: hsl(225, 100%, 98%);
 }
-.toogleSection {
+.toggleSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
 }
-.toogleSection__switch {
+.toggleSection__switch {
     justify-self: end;
 }
 .socials {
@@ -222,21 +222,21 @@ footer p{
         padding: 40px 80px 80px 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "topTitle toogle"
+        grid-template-areas: "topTitle toggle"
                              "numFollowers .";
     }
     .topSection h1{
         grid-area: topTitle;
     }
-    .toogleSection{
+    .toggleSection{
         display: flex;
         justify-content: center;
         align-items: center;
         align-self: center;
         justify-self: end;
-        grid-area: toogle;
+        grid-area: toggle;
     }
-    .toogleSection span{
+    .toggleSection span{
         padding-right: 10px;
     }
     .topSection span{

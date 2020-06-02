@@ -1,0 +1,31 @@
+-var title = "Social Media Dashboard"
+mixin social_section(user, followersNumber, stats, img, imgInfo, icon, iconInfo)
+    .socials__section
+        .socials__section--socialMedia
+            img(src="assets/images/icon-"+img+".svg" alt=imgInfo)
+            span #{user}
+        .socials__section--followers
+            h3.followers__number #{followersNumber}
+            span.followers__text FOLLOWERS
+        .socials__section--stats
+            img(src="assets/images/icon-"+icon+".svg" alt=iconInfo)
+            span.stats__text #{stats} Today
+mixin overview_section(desc, number, stats, img, imgInfo, icon, iconInfo)
+    .overview__section
+        .overview__section--wrap
+            span.overview__section--subHeader #{desc}
+            img(src="assets/images/icon-"+img+".svg" alt=imgInfo)
+            span.overview__section--number #{number}
+            .overview__section--stats
+                img(src="assets/images/icon-"+icon+".svg" alt=iconInfo)
+                span.stats_text #{stats}
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        //- title=title
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/toggle_style.css")
+    body

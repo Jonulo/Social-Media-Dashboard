@@ -1,0 +1,31 @@
+include components/layout.pug
+    .topSection
+        h1 Social Media Dashboard
+        span Total Followers: 23,004
+        br
+        br
+        hr
+        br
+        .toggleSection
+            span Dark Mode
+            label.toggleSection__switch
+                input(type="checkbox" id="toggle")
+                span.slider.round
+    section.socials
+        +social_section('@jonuulo', '1987', '12', 'facebook', 'facebook logo', 'up', 'icon up')
+        +social_section('@jonu', '1044', '99', 'twitter', 'twitter logo', 'up', 'icon up')
+        +social_section('@jonuloNunez', '11k', '1099', 'instagram', 'instagram logo', 'up', 'icon up')
+        +social_section('@jonuulo', '8239', '144', 'youtube', 'youtube logo', 'down', 'icon down')
+    h2 Overview - Today
+    section.overview
+        +overview_section('Pages Views', '87', '3%', 'facebook', 'facebook logo', 'up', 'icon up')
+        +overview_section('Likes', '52', '2%', 'facebook', 'facebook logo', 'down', 'icon down')
+        +overview_section('Likes', '5462', '2257%', 'instagram', 'instagram logo', 'up', 'icon up')
+        +overview_section('Profiles Views', '52k', '1375%', 'instagram', 'instagram logo', 'up', 'icon up')
+        +overview_section('Retweets', '117', '303%', 'twitter', 'twitter logo', 'up', 'icon up')
+        +overview_section('Likes', '507', '553%', 'twitter', 'twitter logo', 'up', 'icon up')
+        +overview_section('Likes', '107', '19%', 'youtube', 'youtube logo', 'down', 'icon down')
+        +overview_section('Total Views', '1407', '12%', 'youtube', 'youtube logo', 'down', 'icon up')
+    footer
+        p Made by @Jonuulo
+    script(src="js/index.js")
